@@ -7,7 +7,6 @@ background: #f4f8fb;
 font-synthesis: none;
 text-rendering: optimizeLegibility;
 
-
 --navy: #003B70;
 --blue: #0072CE;
 --blue2: #005DAA;
@@ -53,10 +52,6 @@ text-decoration: none;
 display: none !important;
 }
 
-/* =========================================================
-MARCA
-========================================================= */
-
 .brand {
 display: inline-flex;
 align-items: center;
@@ -65,7 +60,6 @@ color: var(--navy);
 font: 800 18px Manrope, sans-serif;
 white-space: nowrap;
 }
-
 
 .public-nav {
 height: 74px;
@@ -1238,12 +1232,7 @@ margin-top: 15px;
 text-align: center;
 }
 
-/* =========================================================
-RESPONSIVIDADE
-========================================================= */
-
 @media (max-width: 850px) {
-
 
 .hero {
     padding: 38px 30px;
@@ -1278,7 +1267,6 @@ RESPONSIVIDADE
 }
 
 @media (max-width: 640px) {
-
 
 .public-nav {
     height: 62px;
@@ -1486,16 +1474,10 @@ font-size: 8px;
 color: #28769F;
 }
 
-/* =========================================================
-AZUL — IDENTIDADE VISUAL
-Override visual
-========================================================= */
-
 :root {
 --navy: #003B70;
 --blue: #0072CE;
 --blue2: #0057A8;
-
 
 --sky: #EAF7FF;
 --sky-strong: #D5EEFC;
@@ -1509,7 +1491,6 @@ Override visual
 --bg: #F4FAFE;
 
 font-family: 'DM Sans', sans-serif;
-
 
 }
 
@@ -1579,14 +1560,12 @@ background: #0057A8 !important;
 transform: translateY(-1px);
 }
 
-
 .hero {
 max-width: 100%;
 min-height: 570px;
 padding: 65px 7%;
 grid-template-columns: 1fr 1fr;
 gap: 50px;
-
 
 background:
     linear-gradient(
@@ -1599,13 +1578,11 @@ background:
 position: relative;
 overflow: hidden;
 
-
 }
 
 .hero::before {
 content: "";
 position: absolute;
-
 
 width: 420px;
 height: 420px;
@@ -1617,13 +1594,11 @@ border-radius: 50%;
 
 background: rgba(0, 114, 206, .07);
 
-
 }
 
 .hero::after {
 content: "";
 position: absolute;
-
 
 width: 250px;
 height: 250px;
@@ -1634,7 +1609,6 @@ bottom: -130px;
 border-radius: 50%;
 
 background: rgba(0, 114, 206, .06);
-
 
 }
 
@@ -1678,12 +1652,10 @@ padding: 13px 22px;
 font-size: 11px;
 font-weight: 800;
 
-
 transition:
     transform .2s ease,
     box-shadow .2s ease,
     background .2s ease;
-
 
 }
 
@@ -1691,10 +1663,8 @@ transition:
 background: #0072CE;
 color: #FFFFFF;
 
-
 box-shadow:
     0 7px 18px rgba(0, 114, 206, .25);
-
 
 }
 
@@ -1702,10 +1672,8 @@ box-shadow:
 background: #0057A8;
 transform: translateY(-2px);
 
-
 box-shadow:
     0 10px 22px rgba(0, 114, 206, .30);
-
 
 }
 
@@ -1714,10 +1682,8 @@ box-shadow:
 background: #FFFFFF;
 color: #0067B9;
 
-
 border: 1px solid #BFDDEC;
 border-radius: 24px;
-
 
 }
 
@@ -1737,7 +1703,6 @@ z-index: 1;
 width: 380px;
 height: 380px;
 
-
 right: 8%;
 top: 0;
 
@@ -1749,12 +1714,10 @@ background:
         transparent 72%
     );
 
-
 }
 
 .art-card {
 width: min(390px, 92%);
-
 
 padding: 22px;
 
@@ -1767,7 +1730,6 @@ box-shadow:
     0 20px 55px rgba(0, 59, 112, .16);
 
 transform: rotate(-1deg);
-
 
 }
 
@@ -1797,7 +1759,6 @@ color: #0072CE;
 background: #0072CE;
 color: #FFFFFF;
 
-
 border: 0;
 border-radius: 22px;
 
@@ -1806,20 +1767,16 @@ padding: 11px 17px;
 box-shadow:
     0 8px 22px rgba(0, 114, 206, .25);
 
-
 }
-
 
 .how {
 max-width: 100%;
 padding: 70px 7%;
 
-
 background: #FFFFFF;
 
 grid-template-columns: .8fr 1.2fr;
 gap: 70px;
-
 
 }
 
@@ -1862,10 +1819,8 @@ color: #71889A;
 max-width: 100%;
 padding: 28px 7%;
 
-
 background: #003B70;
 color: #FFFFFF;
-
 
 }
 
@@ -1900,12 +1855,10 @@ transparent 45%
 border: 0;
 border-radius: 22px;
 
-
 padding: 38px;
 
 box-shadow:
     0 20px 60px rgba(0, 59, 112, .12);
-
 
 }
 
@@ -1913,14 +1866,12 @@ box-shadow:
 width: 48px;
 height: 48px;
 
-
 border-radius: 50%;
 
 background: #E4F4FC;
 color: #0072CE;
 
 margin-bottom: 22px;
-
 
 }
 
@@ -1951,10 +1902,8 @@ padding: 13px 14px;
 .customer-add input:focus {
 border-color: #0072CE;
 
-
 box-shadow:
     0 0 0 3px #DFF2FC;
-
 
 }
 
@@ -1984,7 +1933,6 @@ linear-gradient(
 .app-sidebar {
 width: 250px;
 
-
 background: #FFFFFF;
 border-right: 1px solid #DCEBF3;
 
@@ -1992,7 +1940,6 @@ padding: 27px 18px;
 
 box-shadow:
     3px 0 18px rgba(0, 59, 112, .035);
-
 
 }
 
@@ -2008,7 +1955,6 @@ letter-spacing: 1.4px;
 .side-link {
 padding: 13px 13px;
 
-
 border-radius: 11px;
 
 color: #638096;
@@ -2016,7 +1962,6 @@ color: #638096;
 font-size: 11px;
 
 transition: .2s ease;
-
 
 }
 
@@ -2029,10 +1974,8 @@ color: #0072CE;
 background: #0072CE;
 color: #FFFFFF;
 
-
 box-shadow:
     0 6px 15px rgba(0, 114, 206, .20);
-
 
 }
 
@@ -2065,12 +2008,10 @@ color: #71889A;
 border: 0;
 border-radius: 16px;
 
-
 background: #FFFFFF;
 
 box-shadow:
     0 7px 25px rgba(0, 59, 112, .06);
-
 
 }
 
@@ -2084,13 +2025,11 @@ font-size: 15px;
 background: #FFFFFF;
 border: 1px solid #D7E9F2;
 
-
 border-radius: 20px;
 
 color: #17628E;
 
 padding: 10px 15px;
-
 
 }
 
@@ -2098,7 +2037,6 @@ padding: 10px 15px;
 background: #EAF7FF;
 border-color: #0072CE;
 }
-
 
 .update-list {
 gap: 18px;
@@ -2108,7 +2046,6 @@ gap: 18px;
 border: 0;
 border-radius: 16px;
 
-
 padding: 20px;
 
 box-shadow:
@@ -2116,16 +2053,13 @@ box-shadow:
 
 transition: .2s ease;
 
-
 }
 
 .update-card:hover {
 transform: translateY(-3px);
 
-
 box-shadow:
     0 12px 28px rgba(0, 59, 112, .10);
-
 
 }
 
@@ -2138,13 +2072,10 @@ font-size: 13px;
 background: #E7F5FC;
 color: #0072CE;
 
-
 border-radius: 20px;
 padding: 6px 10px;
 
-
 }
-
 
 .empty-state {
 border: 2px dashed #C8E4F1;
@@ -2160,19 +2091,15 @@ color: #0072CE;
 color: #315E7A;
 }
 
-
-
 .org-card {
 border: 1px solid #DCEBF3;
 border-radius: 13px;
-
 
 padding: 15px;
 
 background: #FFFFFF;
 
 transition: .2s ease;
-
 
 }
 
@@ -2181,10 +2108,8 @@ transition: .2s ease;
 border-color: #77B9DE;
 background: #F1FAFE;
 
-
 box-shadow:
     0 6px 18px rgba(0, 114, 206, .08);
-
 
 }
 
@@ -2192,20 +2117,16 @@ box-shadow:
 width: 35px;
 height: 35px;
 
-
 border-radius: 10px;
 
 background: #E4F4FC;
 color: #0072CE;
-
 
 }
 
 .org-card b {
 color: #31546D;
 }
-
-
 
 .ops-incident {
 border-top: 1px solid #E5EFF5;
@@ -2223,18 +2144,12 @@ background: #E65353;
 color: #0072CE;
 }
 
-/* =========================================================
-MODAL
-========================================================= */
-
 .modal {
 border-radius: 20px;
 border: 0;
 
-
 box-shadow:
     0 25px 80px rgba(0, 45, 85, .25);
-
 
 }
 
@@ -2246,8 +2161,6 @@ color: #003B70;
 background: rgba(0, 49, 88, .55);
 }
 
-
-
 .area-state {
 border: 1px solid #D8EAF3;
 border-radius: 15px;
@@ -2258,10 +2171,7 @@ background: #FFFFFF;
 color: #0072CE;
 }
 
-
-
 @media (max-width: 850px) {
-
 
 .hero {
     padding: 50px 30px;
@@ -2275,11 +2185,9 @@ color: #0072CE;
     width: 205px;
 }
 
-
 }
 
 @media (max-width: 640px) {
-
 
 .public-nav {
     height: 65px;
@@ -2361,17 +2269,9 @@ color: #0072CE;
   background: #002B5C;
 }
 
-
-/* =========================
-   ÁREA INTERNA
-   ========================= */
-
 .app-shell .workspace {
   font-size: 18px;
 }
-
-
-/* TÍTULO PRINCIPAL */
 
 .app-shell .workspace-top h1 {
   font-size: 36px;
@@ -2390,11 +2290,6 @@ color: #0072CE;
   color: #004FA3;
   font-weight: 800;
 }
-
-
-/* =========================
-   SIDEBAR
-   ========================= */
 
 .app-shell .sidebar-label {
   font-size: 12px;
@@ -2428,7 +2323,6 @@ color: #0072CE;
   font-size: 12px;
 }
 
-
 .app-shell .section-heading h2,
 .app-shell .customer-add h2,
 .app-shell .ops-main .section-heading h2 {
@@ -2444,11 +2338,6 @@ color: #0072CE;
   line-height: 1.6;
 }
 
-
-/* =========================
-   CHIPS DE VOOS
-   ========================= */
-
 .app-shell .flight-chips span {
   font-size: 15px;
   padding: 12px 16px;
@@ -2457,11 +2346,6 @@ color: #0072CE;
   border: 1px solid #8DD5FF;
   font-weight: 700;
 }
-
-
-/* =========================
-   CARDS DE ATUALIZAÇÃO
-   ========================= */
 
 .app-shell .update-meta b {
   font-size: 16px;
@@ -2488,8 +2372,6 @@ color: #0072CE;
   font-weight: 700;
 }
 
-
-
 .app-shell .button.primary {
   background: linear-gradient(
     135deg,
@@ -2514,8 +2396,6 @@ color: #0072CE;
 .app-shell .outline-button {
   font-size: 15px;
 }
-
-
 
 .app-shell .empty-state b {
   font-size: 16px;
@@ -2595,7 +2475,6 @@ color: #0072CE;
   font-weight: 800;
 }
 
-
 .app-shell .ops-aside h2 {
   font-size: 22px;
   color: #002B5C;
@@ -2614,11 +2493,6 @@ color: #0072CE;
   font-size: 14px;
   line-height: 1.6;
 }
-
-
-/* =========================
-   MOBILE
-   ========================= */
 
 @media (max-width: 640px) {
 
@@ -2650,14 +2524,6 @@ color: #0072CE;
   }
 }
 
-
-
-/* =========================================================
-   AJUSTE FINAL — RESPONSIVIDADE
-   Mantém a estrutura existente e adapta o layout por tela.
-   ========================================================= */
-
-/* Correções de escalas que estavam causando overflow */
 button, input, textarea, select {
   font-size: 16px;
 }
@@ -2697,7 +2563,6 @@ button, input, textarea, select {
   font-size: 20px;
 }
 
-/* Evita elementos internos ultrapassarem seus containers */
 img, video, iframe, svg {
   max-width: 100%;
 }
@@ -2719,10 +2584,6 @@ img, video, iframe, svg {
   width: 100%;
 }
 
-/* =========================
-   DESKTOP GRANDE
-   ========================= */
-
 @media (min-width: 1200px) {
   .public-nav,
   .public-footer,
@@ -2742,10 +2603,6 @@ img, video, iframe, svg {
     padding-right: 70px;
   }
 }
-
-/* =========================
-   TABLET / NOTEBOOK
-   ========================= */
 
 @media (max-width: 1024px) {
   .public-nav {
@@ -2801,10 +2658,6 @@ img, video, iframe, svg {
     order: -1;
   }
 }
-
-/* =========================
-   TABLET VERTICAL
-   ========================= */
 
 @media (max-width: 850px) {
   .public-nav {
@@ -2880,10 +2733,6 @@ img, video, iframe, svg {
   }
 }
 
-/* =========================
-   CELULAR
-   ========================= */
-
 @media (max-width: 640px) {
   html {
     overflow-x: hidden;
@@ -2894,7 +2743,6 @@ img, video, iframe, svg {
     overflow-x: hidden;
   }
 
-  /* Navegação pública */
   .public-nav {
     height: auto;
     min-height: 64px;
@@ -2930,7 +2778,6 @@ img, video, iframe, svg {
     border-radius: 7px;
   }
 
-  /* Hero */
   .hero {
     min-height: auto;
     padding: 38px 20px 30px;
@@ -3003,7 +2850,6 @@ img, video, iframe, svg {
     padding: 8px 10px;
   }
 
-  /* Como funciona */
   .how {
     grid-template-columns: 1fr;
     padding: 40px 20px 45px;
@@ -3035,7 +2881,6 @@ img, video, iframe, svg {
     font-size: 14px;
   }
 
-  /* Footer */
   .public-footer {
     padding: 18px 20px;
     flex-direction: column;
@@ -3047,7 +2892,6 @@ img, video, iframe, svg {
     font-size: 12px;
   }
 
-  /* Autenticação */
   .auth-wrap {
     min-height: calc(100vh - 64px);
     padding: 25px 15px 40px;
@@ -3078,7 +2922,6 @@ img, video, iframe, svg {
     min-width: 0;
   }
 
-  /* Área interna: sidebar vira barra inferior */
   .app-shell {
     min-height: 100vh;
     padding-bottom: 76px;
@@ -3182,7 +3025,6 @@ img, video, iframe, svg {
     line-height: 1.5;
   }
 
-  /* Adicionar voo */
   .customer-add {
     padding: 15px;
     gap: 14px;
@@ -3199,7 +3041,6 @@ img, video, iframe, svg {
     min-width: 0;
   }
 
-  /* Voos e atualizações */
   .flight-chips {
     width: 100%;
   }
@@ -3240,7 +3081,6 @@ img, video, iframe, svg {
     font-size: 11px;
   }
 
-  /* Operação */
   .ops-layout {
     grid-template-columns: 1fr;
     gap: 15px;
@@ -3330,7 +3170,6 @@ img, video, iframe, svg {
     text-align: left;
   }
 
-  /* Modais */
   .modal {
     width: calc(100vw - 24px);
     max-width: none;
@@ -3362,7 +3201,6 @@ img, video, iframe, svg {
     overflow-y: auto;
   }
 
-  /* Estado vazio */
   .empty-state {
     min-height: 130px;
     padding: 20px 15px;
@@ -3378,7 +3216,6 @@ img, video, iframe, svg {
     font-size: 13px;
   }
 
-  /* Acesso negado */
   .denied {
     padding: 25px 15px;
   }
@@ -3387,10 +3224,6 @@ img, video, iframe, svg {
     width: 100%;
   }
 }
-
-/* =========================
-   CELULARES MUITO PEQUENOS
-   ========================= */
 
 @media (max-width: 380px) {
   .public-nav .brand {
@@ -3430,5 +3263,41 @@ img, video, iframe, svg {
 
   .auth-card {
     padding: 22px 16px;
+  }
+}
+
+@media (min-width: 851px) {
+
+  .public-nav,
+  .hero,
+  .how,
+  .public-footer {
+    width: 100%;
+    max-width: none;
+  }
+
+  .app-shell .workspace {
+    width: calc(100% - 250px);
+    max-width: none;
+    margin-left: 250px;
+    padding-left: clamp(28px, 4vw, 70px);
+    padding-right: clamp(28px, 4vw, 70px);
+  }
+
+  .app-shell .update-list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .app-shell .org-list {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1100px) {
+  .app-shell .workspace {
+    width: calc(100% - 205px);
+    margin-left: 205px;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 }
