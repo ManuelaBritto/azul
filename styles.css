@@ -2793,3 +2793,786 @@ MOBILE
     font-size: 13px;
   }
 }
+
+
+
+/* =========================================================
+   AJUSTE FINAL — RESPONSIVIDADE
+   Mantém a estrutura existente e adapta o layout por tela.
+   ========================================================= */
+
+/* Correções de escalas que estavam causando overflow */
+button, input, textarea, select {
+  font-size: 16px;
+}
+
+.eyebrow {
+  font-size: 12px;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 4.5vw, 58px);
+}
+
+.hero-copy > p {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.button {
+  gap: 8px;
+  font-size: 15px;
+}
+
+.how h2 {
+  font-size: clamp(30px, 3.2vw, 44px);
+}
+
+.how > div:first-child > p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.how-steps h3 {
+  font-size: 20px;
+}
+
+.how-steps article > span {
+  font-size: 20px;
+}
+
+/* Evita elementos internos ultrapassarem seus containers */
+img, video, iframe, svg {
+  max-width: 100%;
+}
+
+.hero-copy,
+.hero-art,
+.ops-main,
+.ops-aside,
+.panel,
+.update-card,
+.org-card {
+  min-width: 0;
+}
+
+.public-nav,
+.public-footer,
+.hero,
+.how {
+  width: 100%;
+}
+
+/* =========================
+   DESKTOP GRANDE
+   ========================= */
+
+@media (min-width: 1200px) {
+  .public-nav,
+  .public-footer,
+  .hero,
+  .how {
+    max-width: 1400px;
+  }
+
+  .workspace {
+    max-width: 1600px;
+    margin-left: 235px;
+    margin-right: auto;
+  }
+
+  .hero {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+/* =========================
+   TABLET / NOTEBOOK
+   ========================= */
+
+@media (max-width: 1024px) {
+  .public-nav {
+    padding: 0 24px;
+  }
+
+  .public-nav nav {
+    gap: 18px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 0.9fr;
+    padding: 42px 34px 48px;
+  }
+
+  .hero-art {
+    min-height: 350px;
+  }
+
+  .art-card {
+    width: min(390px, 100%);
+  }
+
+  .how {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding: 48px 34px;
+  }
+
+  .how > div:first-child > p {
+    max-width: 700px;
+  }
+
+  .how-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .workspace {
+    margin-left: 205px;
+    padding: 26px 28px 45px;
+    max-width: none;
+  }
+
+  .app-sidebar {
+    width: 205px;
+  }
+
+  .ops-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ops-aside {
+    order: -1;
+  }
+}
+
+/* =========================
+   TABLET VERTICAL
+   ========================= */
+
+@media (max-width: 850px) {
+  .public-nav {
+    padding: 0 20px;
+  }
+
+  .public-nav nav {
+    gap: 12px;
+  }
+
+  .public-nav nav a:not(.nav-login) {
+    font-size: 11px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 44px 30px 34px;
+  }
+
+  .hero-copy {
+    max-width: 700px;
+  }
+
+  .hero-art {
+    min-height: 330px;
+    margin-top: 15px;
+  }
+
+  .floating-chip {
+    right: 5%;
+  }
+
+  .how {
+    padding: 44px 30px;
+  }
+
+  .workspace-top {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .customer-add {
+    align-items: stretch;
+  }
+
+  .customer-add > div {
+    width: 100%;
+  }
+
+  .customer-add form {
+    width: 100%;
+  }
+
+  .customer-add input {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .update-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .org-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .modal {
+    width: min(92vw, 620px);
+  }
+}
+
+/* =========================
+   CELULAR
+   ========================= */
+
+@media (max-width: 640px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  /* Navegação pública */
+  .public-nav {
+    height: auto;
+    min-height: 64px;
+    padding: 10px 16px;
+    gap: 10px;
+  }
+
+  .public-nav .brand {
+    min-width: 0;
+    font-size: 14px;
+  }
+
+  .public-nav .brand-logo {
+    width: 34px !important;
+    height: auto;
+  }
+
+  .public-nav nav {
+    gap: 8px;
+    margin-left: auto;
+  }
+
+  .public-nav nav > a:first-child {
+    display: none;
+  }
+
+  .public-nav nav a {
+    font-size: 11px;
+  }
+
+  .nav-login {
+    padding: 8px 11px;
+    border-radius: 7px;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: auto;
+    padding: 38px 20px 30px;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    margin: 14px 0;
+    font-size: clamp(32px, 10vw, 43px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-copy > p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 22px;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .hero-note {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .hero-art {
+    min-height: 300px;
+    width: 100%;
+  }
+
+  .art-glow {
+    width: 260px;
+    height: 260px;
+  }
+
+  .art-card {
+    width: min(100%, 360px);
+    padding: 15px;
+    transform: rotate(-1deg);
+  }
+
+  .art-card h3 {
+    font-size: 18px;
+  }
+
+  .art-card h3 small {
+    font-size: 14px;
+  }
+
+  .art-card > p {
+    font-size: 15px;
+  }
+
+  .art-message p {
+    font-size: 14px;
+  }
+
+  .floating-chip {
+    bottom: 4px;
+    right: 2px;
+    font-size: 9px;
+    padding: 8px 10px;
+  }
+
+  /* Como funciona */
+  .how {
+    grid-template-columns: 1fr;
+    padding: 40px 20px 45px;
+    gap: 30px;
+  }
+
+  .how h2 {
+    font-size: 30px;
+  }
+
+  .how > div:first-child > p {
+    font-size: 15px;
+  }
+
+  .how-steps {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .how-steps article {
+    padding-left: 14px;
+  }
+
+  .how-steps h3 {
+    font-size: 19px;
+  }
+
+  .how-steps p {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .public-footer {
+    padding: 18px 20px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .public-footer > span {
+    font-size: 12px;
+  }
+
+  /* Autenticação */
+  .auth-wrap {
+    min-height: calc(100vh - 64px);
+    padding: 25px 15px 40px;
+  }
+
+  .auth-card {
+    width: 100%;
+    padding: 26px 20px;
+    border-radius: 12px;
+    box-shadow: 0 14px 35px rgba(0, 59, 112, .12);
+  }
+
+  .auth-card h1 {
+    font-size: 23px;
+  }
+
+  .auth-card > p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .auth-card label {
+    font-size: 14px;
+  }
+
+  .auth-card input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Área interna: sidebar vira barra inferior */
+  .app-shell {
+    min-height: 100vh;
+    padding-bottom: 76px;
+  }
+
+  .app-sidebar {
+    position: fixed;
+    inset: auto 0 0 0;
+    width: 100%;
+    height: 68px;
+    min-height: 68px;
+    padding: 7px 10px;
+    border-right: 0;
+    border-top: 1px solid var(--line);
+    box-shadow: 0 -5px 20px rgba(0, 59, 112, .08);
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    z-index: 50;
+  }
+
+  .app-sidebar .brand,
+  .app-sidebar .sidebar-label,
+  .sidebar-user {
+    display: none;
+  }
+
+  .app-sidebar nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .side-link {
+    flex: 1;
+    max-width: 210px;
+    min-width: 0;
+    padding: 9px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px !important;
+    line-height: 1.2;
+    border-radius: 8px;
+    white-space: normal;
+  }
+
+  .side-link.selected {
+    box-shadow: inset 0 3px 0 var(--blue);
+  }
+
+  .workspace {
+    width: 100%;
+    max-width: none;
+    margin-left: 0 !important;
+    padding: 22px 16px 30px;
+  }
+
+  .workspace-top {
+    flex-direction: column;
+    align-items: stretch;
+    padding-bottom: 17px;
+    gap: 15px;
+  }
+
+  .workspace-top h1,
+  .app-shell .workspace-top h1 {
+    font-size: 27px;
+  }
+
+  .workspace-top p,
+  .app-shell .workspace-top p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .workspace-top .outline-button {
+    align-self: flex-start;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section-heading h2,
+  .app-shell .section-heading h2,
+  .app-shell .customer-add h2,
+  .app-shell .ops-main .section-heading h2 {
+    font-size: 19px;
+  }
+
+  .section-heading p,
+  .app-shell .section-heading p,
+  .app-shell .customer-add p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* Adicionar voo */
+  .customer-add {
+    padding: 15px;
+    gap: 14px;
+  }
+
+  .customer-add form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .customer-add input,
+  .customer-add .button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Voos e atualizações */
+  .flight-chips {
+    width: 100%;
+  }
+
+  .flight-chips span {
+    flex: 1 1 auto;
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .update-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .update-card {
+    padding: 14px;
+  }
+
+  .app-shell .update-meta b {
+    font-size: 15px;
+  }
+
+  .app-shell .update-meta span {
+    font-size: 11px;
+  }
+
+  .app-shell .update-card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .app-shell .update-card > small {
+    font-size: 12px;
+  }
+
+  .app-shell .public-status {
+    font-size: 11px;
+  }
+
+  /* Operação */
+  .ops-layout {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .ops-main {
+    width: 100%;
+  }
+
+  .ops-aside {
+    width: 100%;
+    order: -1;
+  }
+
+  .org-list {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .org-card {
+    padding: 14px;
+  }
+
+  .org-card b {
+    font-size: 14px;
+  }
+
+  .org-card small {
+    font-size: 12px;
+  }
+
+  .org-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .board {
+    margin-top: 15px;
+  }
+
+  .board .section-heading {
+    flex-direction: column;
+  }
+
+  .compact {
+    width: 100%;
+  }
+
+  .ops-incident {
+    padding: 15px 3px;
+  }
+
+  .app-shell .ops-incident b {
+    font-size: 14px;
+  }
+
+  .app-shell .ops-incident small {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .app-shell .ops-incident p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .area-history {
+    padding-left: 8px;
+  }
+
+  .app-shell .area-history p {
+    font-size: 12px;
+  }
+
+  .app-shell .area-history time {
+    font-size: 10px;
+  }
+
+  .incident-actions {
+    gap: 8px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app-shell .text-action {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  /* Modais */
+  .modal {
+    width: calc(100vw - 24px);
+    max-width: none;
+    max-height: calc(100vh - 24px);
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .modal form {
+    gap: 14px;
+  }
+
+  .modal h2 {
+    font-size: 22px;
+  }
+
+  .modal > p,
+  .modal form > p:not(.form-error) {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .form-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .area-picker {
+    max-height: 180px;
+    overflow-y: auto;
+  }
+
+  /* Estado vazio */
+  .empty-state {
+    min-height: 130px;
+    padding: 20px 15px;
+  }
+
+  .empty-state b,
+  .app-shell .empty-state b {
+    font-size: 14px;
+  }
+
+  .empty-state p,
+  .app-shell .empty-state p {
+    font-size: 13px;
+  }
+
+  /* Acesso negado */
+  .denied {
+    padding: 25px 15px;
+  }
+
+  .denied .auth-card {
+    width: 100%;
+  }
+}
+
+/* =========================
+   CELULARES MUITO PEQUENOS
+   ========================= */
+
+@media (max-width: 380px) {
+  .public-nav .brand {
+    font-size: 12px;
+  }
+
+  .public-nav .brand-logo {
+    width: 30px !important;
+  }
+
+  .nav-login {
+    padding: 7px 9px;
+    font-size: 10px;
+  }
+
+  .hero {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero h1 {
+    font-size: 31px;
+  }
+
+  .hero-copy > p {
+    font-size: 15px;
+  }
+
+  .workspace {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .side-link {
+    font-size: 11px !important;
+  }
+
+  .auth-card {
+    padding: 22px 16px;
+  }
+}
